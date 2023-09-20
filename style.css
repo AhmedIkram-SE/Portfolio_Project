@@ -1,0 +1,32 @@
+.container1{
+    display: flex;
+    
+}
+.header{
+    display: flex;
+    width: 375px;
+    height: 48px;
+    border: solid black;
+    padding: 4px 24px 4px 12px;
+    justify-content: space-between;
+
+}
+.logo{
+    display: flex;
+padding: 10px 12px;
+border: solid black;
+align-items: center;
+color: var(--primary-b-400, #6070FF);
+text-align: center;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px; /* 111.111% */
+}
+.button{
+    display: flex;
+padding: 8px;
+border: solid black;
+border-radius: 8px;
+}

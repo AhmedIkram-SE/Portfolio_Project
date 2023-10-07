@@ -862,9 +862,6 @@ input:focus {
     color: var(--neutrals-n-800, #172b4d);
     margin-top: 0;
     margin-bottom: 0;
-
-
-    /* Header / 2 */
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 40px;
     font-style: normal;
@@ -878,9 +875,6 @@ input:focus {
     color: var(--neutrals-n-600, #344563);
     margin-top: 0;
     margin-bottom: 0;
-
-
-    /* Body / 2 */
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-style: normal;

@@ -200,9 +200,11 @@ body {
   margin-top: 8px;
   margin-bottom: 8px;
 }
+
 .fr-text-Desktop-2 {
   display: none;
 }
+
 .fr1-text-Desktop-2 {
   display: none;
 }
@@ -236,6 +238,7 @@ body {
   font-weight: 400;
   line-height: 24px; /* 160% */
 }
+
 .p-text-Desktop-2 {
   display: none;
 }
@@ -264,6 +267,7 @@ body {
   line-height: 16px; /* 133.333% */
   letter-spacing: 0.36px;
 }
+
 .t-li-Desktop-2 {
   display: none;
 }
@@ -340,8 +344,9 @@ body {
   line-height: 44px;
   margin: 0;
 }
+
 .Project-Title-2-Desktop {
-  display:none ;
+  display: none;
 }
 
 .card3 {
@@ -822,8 +827,7 @@ input:focus {
 
   .navicons-fr1:hover {
     background: var(--theme-1-primary-colors-4, #ebebff);
-    box-shadow: 0px 8px 16px 0px rgba(64, 83, 252, 0.24);
-
+    box-shadow: 0 8px 16px 0 rgba(64, 83, 252, 0.24);
   }
 
   .navicons-fr2 {
@@ -845,7 +849,7 @@ input:focus {
 
   .navicons-fr2:hover {
     background: var(--theme-1-primary-colors-4, #ebebff);
-    box-shadow: 0px 8px 16px 0px rgba(64, 83, 252, 0.24);
+    box-shadow: 0 8px 16px 0 rgba(64, 83, 252, 0.24);
   }
 
   .button {
@@ -1042,6 +1046,7 @@ input:focus {
     font-weight: 400;
     line-height: 24px; /* 160% */
   }
+
   .p-text-Desktop-2 {
     margin: 0;
     width: 100%;
@@ -1081,6 +1086,7 @@ input:focus {
     letter-spacing: 0.36px;
     cursor: pointer;
   }
+
   .t-li-Desktop-2 {
     display: flex;
     padding: 4px 12px;
@@ -1088,7 +1094,7 @@ input:focus {
     border-radius: 8px;
     background: var(--primary-b-50, #ebebff);
     color: var(--primary-b-400, #6070ff);
-  
+
     /* Button / Small */
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 12px;
@@ -1103,6 +1109,7 @@ input:focus {
     background: var(--primary-b-50, #d4d4f3);
     color: #000;
   }
+
   .t-li-Desktop-2:hover {
     background: var(--primary-b-50, #d4d4f3);
     color: #000;
@@ -1139,11 +1146,11 @@ input:focus {
   .see-project:hover {
     border: none;
     border-radius: 8px;
-    background: var(--primary-b-500, #4053FC);
-    color: #ffffff;
+    background: var(--primary-b-500, #4053fc);
+    color: #fff;
 
-/* Button/1 */
-    box-shadow: 0px 8px 16px 0px rgba(64, 83, 252, 0.24);
+    /* Button/1 */
+    box-shadow: 0 8px 16px 0 rgba(64, 83, 252, 0.24);
   }
 
   .card2 {
@@ -1174,6 +1181,7 @@ input:focus {
   .Project-Title-2 {
     display: none;
   }
+
   .Project-Title-2-Desktop {
     display: flex;
     width: 100%;
@@ -1188,6 +1196,7 @@ input:focus {
     line-height: 44px;
     margin: 0;
   }
+
   .fr-text-Desktop-2 {
     display: flex;
     color: var(--neutrals-n-600, #344563);
@@ -1199,6 +1208,7 @@ input:focus {
     margin-top: 8px;
     margin-bottom: 8px;
   }
+
   .fr1-text-Desktop-2 {
     display: flex;
     color: var(--neutrals-n-100, #7a869a);
@@ -1210,6 +1220,7 @@ input:focus {
     margin-top: 8px;
     margin-bottom: 8px;
   }
+
   .card3 {
     display: flex;
     margin-top: 114px;
@@ -1347,10 +1358,10 @@ input:focus {
   .resum:hover {
     border: none;
     border-radius: 8px;
-    background: var(--primary-b-500, #4053FC);
+    background: var(--primary-b-500, #4053fc);
 
-/* Button/1 */
-    box-shadow: 0px 8px 16px 0px rgba(64, 83, 252, 0.24);
+    /* Button/1 */
+    box-shadow: 0 8px 16px 0 rgba(64, 83, 252, 0.24);
     color: #fff;
   }
 
@@ -1459,7 +1470,7 @@ input:focus {
   }
 
   .language-list-lang:hover {
-    box-shadow: 0px 8px 16px 0px rgba(64, 83, 252, 0.24);
+    box-shadow: 0 8px 16px 0 rgba(64, 83, 252, 0.24);
     background: var(--neutrals-n-10, #ededf0);
   }
 
@@ -1627,9 +1638,9 @@ input:focus {
   .get-in-touch:hover {
     border: none;
     border-radius: 8px;
-    background: var(--primary-b-500, #4053FC);
-    color: #ffffff;
-    box-shadow: 0px 8px 16px 0px rgba(64, 83, 252, 0.24);
+    background: var(--primary-b-500, #4053fc);
+    color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(64, 83, 252, 0.24);
   }
 
   ::placeholder {

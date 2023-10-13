@@ -7,13 +7,15 @@ body {
 .container1 {
   display: flex;
   background-color: white;
+  position: sticky;
+  z-index: 100;
+  top: 0;
 }
 
 .header {
   display: flex;
   width: 100%;
   height: 48px;
-  margin-top: 44px;
 
   /* border: solid black; */
   padding: 4px 24px 4px 12px;
@@ -59,6 +61,7 @@ body {
   background-image: url(./Assests/header-shapes\ mobile.png);
   background-color: white;
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   padding: 114px 24px;
   flex-direction: column;
@@ -122,10 +125,9 @@ body {
 
 .Works {
   display: grid;
-  grid-template-columns: 352px;
+  grid-template-columns: auto;
   grid-template-rows: auto 708px auto 708px;
-
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 .card1 {
@@ -141,11 +143,21 @@ body {
   border-radius: 16px;
   border: 1px solid var(--neutrals-n-40, #dfe1e6);
   background: var(--neutrals-n-0, #fff);
+  transition: transform 0.5s ease;
+}
+
+.card1:hover {
+  transform: scale(1.02);
+  cursor: url(./Assests/hand-cursor\ 1.png), auto;
+  box-shadow: #172b4d;
+  border-radius: 24px;
+  border: 2px solid var(--primary-b-200, #a7aeff);
 }
 
 .port-snap {
   width: 100%;
   height: 220px;
+  border-radius: 8px;
 }
 
 .Text-Block {
@@ -320,6 +332,15 @@ body {
   border-radius: 16px;
   border: 1px solid var(--neutrals-n-40, #dfe1e6);
   background: var(--neutrals-n-0, #fff);
+  transition: transform 0.5s ease;
+}
+
+.card2:hover {
+  transform: scale(1.02);
+  cursor: url(./Assests/hand-cursor\ 1.png), auto;
+  box-shadow: #172b4d;
+  border-radius: 24px;
+  border: 2px solid var(--primary-b-200, #a7aeff);
 }
 
 .Primary-Text-2 {
@@ -362,6 +383,15 @@ body {
   border-radius: 16px;
   border: 1px solid var(--neutrals-n-40, #dfe1e6);
   background: var(--neutrals-n-0, #fff);
+  transition: transform 0.5s ease;
+}
+
+.card3:hover {
+  transform: scale(1.02);
+  cursor: url(./Assests/hand-cursor\ 1.png), auto;
+  box-shadow: #172b4d;
+  border-radius: 24px;
+  border: 2px solid var(--primary-b-200, #a7aeff);
 }
 
 .card4 {
@@ -377,6 +407,15 @@ body {
   border-radius: 16px;
   border: 1px solid var(--neutrals-n-40, #dfe1e6);
   background: var(--neutrals-n-0, #fff);
+  transition: transform 0.5s ease;
+}
+
+.card4:hover {
+  transform: scale(1.02);
+  cursor: url(./Assests/hand-cursor\ 1.png), auto;
+  box-shadow: #172b4d;
+  border-radius: 24px;
+  border: 2px solid var(--primary-b-200, #a7aeff);
 }
 
 .Myself {
@@ -626,6 +665,7 @@ body {
   background-image: url(./Assests/contact\ form\ shapes-mobile.svg);
   background-position: right;
   background-repeat: no-repeat;
+  padding-bottom: 40px;
 }
 
 .c-text1 {
@@ -768,6 +808,9 @@ input:focus {
   .container1 {
     display: flex;
     background-color: white;
+    position: sticky;
+    z-index: 100;
+    top: 0;
   }
 
   .header {
@@ -775,8 +818,8 @@ input:focus {
     width: 100%;
     height: 48px;
     margin: 0;
-    padding-right: 143px;
-    padding-left: 143px;
+    padding-right: 9.93%;
+    padding-left: 9.93%;
     justify-content: space-between;
   }
 
@@ -869,7 +912,7 @@ input:focus {
     background-size: cover;
     background-position: center;
     display: flex;
-    padding: 289px 260px;
+    padding: 20% 18.05%;
     flex-direction: column;
     border-radius: 0 0 0 120px;
 
@@ -881,30 +924,31 @@ input:focus {
   .text1 {
     display: flex;
     width: 100%;
-    height: 98px;
+    height: auto;
     flex-direction: column;
     justify-content: center;
     color: var(--neutrals-n-800, #172b4d);
     margin-top: 0;
     margin-bottom: 0;
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 40px;
+    font-size: 3.333vw;
     font-style: normal;
     font-weight: 700;
-    line-height: 52px; /* 130% */
+    line-height: 4.167vw; /* 130% */
+    letter-spacing: 0.37px;
   }
 
   .text2 {
     width: 100%;
-    height: 98px;
+    height: auto;
     color: var(--neutrals-n-600, #344563);
     margin-top: 0;
     margin-bottom: 0;
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 1.389vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 150% */
+    line-height: 1.944vw; /* 150% */
   }
 
   .Connect {
@@ -915,10 +959,11 @@ input:focus {
 
     /* Body / 2 - Bolder */
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 1.111vw;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 150% */
+    line-height: 1.667vw; /* 150% */
+    margin-top: 1.1%;
     cursor: pointer;
   }
 
@@ -927,9 +972,13 @@ input:focus {
   }
 
   .So-Icons {
-    width: 100%;
-    height: 20px;
+    width: 19%;
+    height: auto;
     cursor: pointer;
+  }
+
+  .con-img {
+    width: 100%;
   }
 
   .Works {
@@ -941,11 +990,13 @@ input:focus {
   }
 
   .card1 {
+    width: 82%;
+    height: auto;
     display: flex;
-    margin-top: 114px;
-    margin-left: 114px;
-    margin-right: 114px;
-    padding: 16px;
+    margin-top: 7.91%;
+    margin-left: 7.9%;
+    margin-right: 7.9%;
+    padding: 1.111%;
     flex-direction: row;
     align-items: center;
     gap: 12px;
@@ -956,23 +1007,23 @@ input:focus {
 
   .port-snap {
     display: flex;
-    width: 100%;
-    height: 448px;
+    width: 48.5%;
+    height: auto;
   }
 
   .Text-Block {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 24px;
-    width: 100%;
-    height: 390px;
-    padding: 24px;
+    gap: 4%;
+    width: 47.4%;
+    height: 94%;
+    padding: 4.138% 2.138% 2.138% 2.138%;
   }
 
   .Primary-Text {
-    width: 100%;
-    height: 98px;
+    width: 95.7%;
+    height: auto;
 
     /* border: solid black; */
     display: flex;
@@ -999,11 +1050,11 @@ input:focus {
   .Frame {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 3%;
 
     /* border: solid yellow; */
-    width: 236px;
-    height: 40px;
+    width: 64.5%;
+    height: auto;
   }
 
   .fr-text {
@@ -1051,29 +1102,30 @@ input:focus {
 
   .p-text-Desktop-2 {
     margin: 0;
-    width: 100%;
-    height: 70px;
+    width: 94.67%;
+    height: auto;
     display: flex;
     color: var(--neutrals-n-600, #344563);
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 1.111vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 160% */
+    line-height: 1.667vw; /* 160% */
   }
 
   .tags {
     display: flex;
+    width: 95%;
     align-items: center;
-    gap: 8px;
-    height: 24px;
+    gap: 2%;
+    height: auto;
     padding: 0;
     margin: 0;
   }
 
   .t-li {
     display: flex;
-    padding: 4px 12px;
+    padding: 1.6% 2.76%;
     align-items: center;
     border-radius: 8px;
     background: var(--primary-b-50, #ebebff);
@@ -1081,17 +1133,17 @@ input:focus {
 
     /* Button / Small */
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 0.833vw;
     font-style: normal;
     font-weight: 500;
-    line-height: 16px; /* 133.333% */
+    line-height: 0.833vw; /* 133.333% */
     letter-spacing: 0.36px;
-    cursor: pointer;
+    cursor: url(./Assests/hand-cursor\ 1.png), auto;
   }
 
   .t-li-Desktop-2 {
     display: flex;
-    padding: 4px 12px;
+    padding: 1.4% 1.76%;
     align-items: center;
     border-radius: 8px;
     background: var(--primary-b-50, #ebebff);
@@ -1099,12 +1151,12 @@ input:focus {
 
     /* Button / Small */
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 0.833vw;
     font-style: normal;
     font-weight: 500;
-    line-height: 16px; /* 133.333% */
+    line-height: 1.111vw; /* 133.333% */
     letter-spacing: 0.36px;
-    cursor: pointer;
+    cursor: url(./Assests/hand-cursor\ 1.png), auto;
   }
 
   .t-li:hover {
@@ -1119,14 +1171,14 @@ input:focus {
 
   .action {
     display: flex;
-    height: 153px;
-    padding: 16px 0 89px 0;
+    width: 24.4%;
+    padding: 3.09% 0 0 0;
     align-items: center;
   }
 
   .see-project {
     display: flex;
-    padding: 12px;
+    padding: 7.5%;
     align-items: center;
     gap: 10px;
     border-radius: 8px;
@@ -1136,12 +1188,12 @@ input:focus {
 
     /* Button /Normal */
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 1.111vw;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 141.176% */
+    line-height: 1.667vw; /* 141.176% */
     letter-spacing: 0.51px;
-    cursor: pointer;
+    cursor: url(./Assests/hand-cursor\ 1.png), auto;
     background: content-box;
   }
 
@@ -1156,22 +1208,24 @@ input:focus {
   }
 
   .card2 {
+    width: 82%;
+    height: auto;
     display: flex;
-    margin-top: 114px;
-    margin-left: 114px;
-    margin-right: 114px;
-    padding: 16px;
+    margin-top: 7.91%;
+    margin-left: 7.9%;
+    margin-right: 7.9%;
+    padding: 1.111%;
     flex-direction: row-reverse;
     align-items: center;
-    gap: 35px;
+    gap: 12px;
     border-radius: 24px;
     border: 1px solid var(--neutrals-n-40, #dfe1e6);
     background: var(--neutrals-n-0, #fff);
   }
 
   .Primary-Text-2 {
-    width: 100%;
-    height: 98px;
+    width: 95.7%;
+    height: auto;
 
     /* border: solid black; */
     display: flex;
@@ -1187,15 +1241,15 @@ input:focus {
   .Project-Title-2-Desktop {
     display: flex;
     width: 100%;
-    height: 46px;
+    height: auto;
 
     /* border: solid black; */
     color: var(--neutrals-n-800, #172b4d);
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 32px;
+    font-size: 2.778vw;
     font-style: normal;
     font-weight: 700;
-    line-height: 44px;
+    line-height: 2.778vw;
     margin: 0;
   }
 
@@ -1203,49 +1257,53 @@ input:focus {
     display: flex;
     color: var(--neutrals-n-600, #344563);
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: 1.25vw;
     font-style: normal;
     font-weight: 600;
-    line-height: 16px;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    line-height: 1.667vw;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
   }
 
   .fr1-text-Desktop-2 {
     display: flex;
     color: var(--neutrals-n-100, #7a869a);
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 11px;
+    font-size: 1.25vw;
     font-style: normal;
     font-weight: 600;
-    line-height: 16px;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    line-height: 1.667vw;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
   }
 
   .card3 {
+    width: 82%;
+    height: auto;
     display: flex;
-    margin-top: 114px;
-    margin-left: 114px;
-    margin-right: 114px;
-    padding: 16px;
+    margin-top: 7.91%;
+    margin-left: 7.9%;
+    margin-right: 7.9%;
+    padding: 1.111%;
     flex-direction: row;
     align-items: center;
-    gap: 35px;
+    gap: 12px;
     border-radius: 24px;
     border: 1px solid var(--neutrals-n-40, #dfe1e6);
     background: var(--neutrals-n-0, #fff);
   }
 
   .card4 {
+    width: 82%;
+    height: auto;
     display: flex;
-    margin-top: 114px;
-    margin-left: 114px;
-    margin-right: 114px;
-    padding: 16px;
+    margin-top: 7.91%;
+    margin-left: 7.9%;
+    margin-right: 7.9%;
+    padding: 1.111%;
     flex-direction: row-reverse;
     align-items: center;
-    gap: 35px;
+    gap: 12px;
     border-radius: 24px;
     border: 1px solid var(--neutrals-n-40, #dfe1e6);
     background: var(--neutrals-n-0, #fff);
@@ -1254,59 +1312,58 @@ input:focus {
   .Myself {
     background-color: white;
     box-sizing: border-box;
-    margin-top: 114px;
-    padding: 142px 142px 0 143px;
+    margin-top: 7.9%;
+    padding: 9.86% 9.86% 11.5% 9.93%;
     width: 100%;
-    height: 700.14673px;
+    height: auto;
     display: inline-flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 24px;
+    gap: 2.5%;
     border-radius: 0 120px 0 0;
   }
 
   .top {
-    width: 100%;
-    height: 346px;
+    width: 66%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
-    margin-top: 60px;
   }
 
   .top-text1 {
     display: flex;
     width: 100%;
-    height: 35px;
+    height: auto;
     flex-direction: column;
     justify-content: center;
     color: var(--neutrals-n-800, #172b4d);
 
     /* Header / 2 */
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 40px;
+    font-size: 2.778vw;
     font-style: normal;
     font-weight: 700;
-    line-height: 52px; /* 130% */
+    line-height: 3.611vw; /* 130% */
     margin: 0;
   }
 
   .top-text2 {
     width: 100%;
-    height: 102px;
+    height: auto;
     color: var(--neutrals-n-600, #344563);
     margin: 0;
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 1.111vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.667vw;
   }
 
   .social {
-    width: 200px;
-    height: 80px;
+    width: 44.7%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1316,10 +1373,10 @@ input:focus {
   .social-text {
     color: var(--primary-b-300, #7f8cff);
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 1.111vw;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.667vw;
     margin: 0;
     cursor: pointer;
   }
@@ -1332,29 +1389,29 @@ input:focus {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 40px;
+    height: auto;
   }
 
   .Frame2-icons {
     display: flex;
-    padding: 8px;
+    padding: 4%;
     align-items: flex-start;
     border-radius: 8px;
     cursor: pointer;
   }
 
   .resum {
-    width: 162px;
-    height: 48px;
+    width: 37.5%;
+    height: auto;
     display: flex;
-    padding: 12px;
+    padding: 2.68%;
     align-items: center;
     gap: 10px;
     border-radius: 8px;
     border: 1px solid var(--primary-b-400, #6070ff);
     background: content-box;
     cursor: pointer;
-    margin-top: 24px;
+    margin-top: 5.369%;
   }
 
   .resum:hover {
@@ -1368,16 +1425,16 @@ input:focus {
   }
 
   .resum-text {
-    width: 138px;
-    height: 24px;
+    width: 100%;
+    height: auto;
     margin: 0;
     color: var(--primary-b-500, #396df2);
     text-align: center;
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 1.111vw;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.667vw;
     letter-spacing: 0.51px;
   }
 
@@ -1390,14 +1447,14 @@ input:focus {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 464.14679px;
+    height: auto;
     margin: 0;
     padding: 0;
   }
 
   .Languages {
     width: 100%;
-    height: 250px;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -1414,32 +1471,32 @@ input:focus {
   .Lan-Fr {
     box-sizing: border-box;
     width: 100%;
-    height: 72px;
+    height: auto;
     display: flex;
-    padding: 16px 26px 16px 12px;
+    padding: 2.35% 3.83% 2.35% 1.78%;
     align-items: center;
-    gap: 12px;
+    gap: 12%;
     justify-content: space-between;
   }
 
   .lang-text {
-    width: 237px;
-    height: 27px;
+    width: 35%;
+    height: auto;
     margin: 0;
     color: #000;
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 1.389vw;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.667vw;
     cursor: pointer;
   }
 
   .Lang-button {
-    width: 40px;
-    height: 40px;
+    width: 6.247%;
+    height: auto;
     display: flex;
-    padding: 8px;
+    padding: 1.25%;
     align-items: flex-start;
     border: 0;
     background: content-box;
@@ -1448,23 +1505,23 @@ input:focus {
 
   .language-list {
     box-sizing: border-box;
-    width: 100%;
-    height: 144px;
+    width: 61%;
+    height: auto;
     display: flex;
-    padding: 12px;
+    padding: 1.768%;
     flex-direction: row;
     align-items: center;
-    gap: 12px;
+    gap: 3%;
   }
 
   .language-list-lang {
     flex-direction: column;
     box-sizing: border-box;
-    width: 20%;
-    height: 126.7156px;
+    width: 31.3%;
+    height: auto;
     display: flex;
-    padding: 12px 12px 12px 20px;
-    align-items: center;
+    padding: 3.1% 3.1% 3.1% 5.1%;
+    align-items: flex-start;
     gap: 16px;
     border-radius: 8px;
     background: var(--neutrals-n-10, #f7f7f9);
@@ -1478,18 +1535,17 @@ input:focus {
 
   .img-list {
     display: flex;
-    width: 48px;
-    height: 48px;
+    width: 54%;
+    height: auto;
     flex-shrink: 0;
     border: none;
     background: none;
-    padding-right: 42px;
   }
 
   .list-text {
     display: flex;
-    width: 98px;
-    height: 24px;
+    width: 109%;
+    height: auto;
     margin: 0;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1497,38 +1553,39 @@ input:focus {
     flex-shrink: 0;
     color: var(--neutrals-n-700, #253858);
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 1.042vw;
     font-style: normal;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 1.389vw;
   }
 
   .Frameworks {
     box-sizing: border-box;
     width: 100%;
-    height: 72px;
+    height: auto;
     display: flex;
-    padding: 16px 26px 16px 12px;
+    padding: 2.35% 3.83% 2.35% 1.78%;
     align-items: center;
-    gap: 12px;
+    gap: 12%;
     justify-content: space-between;
   }
 
   .Skills {
     box-sizing: border-box;
     width: 100%;
-    height: 72px;
+    height: auto;
     display: flex;
-    padding: 16px 26px 16px 12px;
+    padding: 2.35% 3.83% 2.35% 1.78%;
     align-items: center;
-    gap: 12px;
+    gap: 12%;
     justify-content: space-between;
   }
 
   .contact {
     display: flex;
     width: 100%;
-    height: 779px;
+    height: auto;
+    padding-bottom: 6%;
     flex-direction: column;
     align-items: center;
     background-color: #6070ff;
@@ -1541,53 +1598,51 @@ input:focus {
 
   .c-text1 {
     display: flex;
-    width: 100%;
-    height: 56px;
+    width: 55.6%;
+    height: auto;
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
     color: var(--neutrals-n-0, #fff);
     text-align: center;
     margin: 0;
-    margin-top: 103px;
+    margin-top: 7.152%;
 
     /* Header / 2 */
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 40px;
+    font-size: 2.778vw;
     font-style: normal;
     font-weight: 700;
-    line-height: 52px; /* 130% */
+    line-height: 3.611vw; /* 130% */
   }
 
   .c-text2 {
     display: flex;
-    width: 569px;
-    height: 102px;
+    width: 39.51%;
+    height: auto;
     align-self: center;
-    margin-top: 12px;
+    margin-top: 0.833%;
     margin-bottom: 0;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-left: 1.667%;
+    margin-right: 1.667%;
     color: var(--primary-b-50, #ebebff);
     text-align: center;
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 1.389vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px; /* 140% */
+    line-height: 1.944vw; /* 140% */
   }
 
   .contact-form {
     display: flex;
-    width: 35%;
+    width: 31%;
     height: auto;
 
     /* border: solid black; */
     box-sizing: border-box;
     align-items: center;
-    margin-top: 52px;
-    padding-right: 24px;
-    padding-left: 24px;
+    margin-top: 3.611%;
     flex-direction: column;
     gap: 20px;
   }
@@ -1616,10 +1671,10 @@ input:focus {
   }
 
   .get-in-touch {
-    width: 142px;
-    height: 48px;
+    width: 33.76%;
+    height: auto;
     display: inline-flex;
-    padding: 12px 16px;
+    padding: 2.684% 3.579%;
     align-items: center;
     border-radius: 8px;
     background: var(--neutrals-n-0, #fff);
@@ -1630,10 +1685,10 @@ input:focus {
 
     /* Button /Normal */
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 1.111vw;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 141.176% */
+    line-height: 1.667vw; /* 141.176% */
     letter-spacing: 0.51px;
   }
 
@@ -1649,32 +1704,32 @@ input:focus {
     padding-left: 8px;
     color: var(--neutral-n-800, #172b4d);
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 1.181vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /* 117.647% */
+    line-height: 1.389vw; /* 117.647% */
   }
 
   input {
     box-sizing: border-box;
-    padding-left: 16px;
+    padding-left: 4%;
     color: var(--neutral-n-800, #172b4d);
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 1.181vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /* 117.647% */
+    line-height: 1.389vw; /* 117.647% */
   }
 
   textarea {
     box-sizing: border-box;
-    padding-left: 16px;
+    padding-left: 4%;
     color: var(--neutral-n-800, #172b4d);
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 1.181vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /* 117.647% */
+    line-height: 1.389vw; /* 117.647% */
   }
 
   textarea:focus,

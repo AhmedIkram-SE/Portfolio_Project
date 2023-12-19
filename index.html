@@ -4,20 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="./style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
     />
   </head>
   <body>
+    <div class="menu">
+      <div class="closeBUT">
+        <button class="HamClose">
+          <img src="./Assests/Icon HAM- Cancel.svg" alt="" />
+        </button>
+      </div>
+      <ul class="hamList">
+        <li>
+          <p id="HamAnchor">Portfolio</p>
+        </li>
+        <li><p id="HamAnchor">About</p></li>
+        <li><p id="HamAnchor">Contact</p></li>
+      </ul>
+    </div>
+
     <header class="container1">
       <nav class="header">
         <div class="logo">My Logo</div>
         <ul class="navicons">
-          <li class="navicons-fr1">Portfolio</li>
-          <li class="navicons-fr2">About</li>
-          <li class="navicons-fr1">Contact</li>
+          <li class="navicons-fr1"><a href="#Portfolio">Portfolio</a></li>
+          <li class="navicons-fr2"><a href="#Myself">About</a></li>
+          <li class="navicons-fr1"><a href="#Contact">Contact</a></li>
         </ul>
         <div class="button">
           <img src="./Assests/Icon - Menu.svg" alt="" />
@@ -30,15 +46,15 @@
       <p class="text2">
         I'm a software developer! I can help you build a product , feature or
         website Look through some of my work and experience! If you like what
-        you see and have a project you need coded, don't hesitate to contact me. 
+        you see and have a project you need coded, don't hesitate to contact me.
       </p>
       <div class="Connect">LET'S CONNECT</div>
       <div class="So-Icons">
-        <img src="./Assests/social media icons.svg" alt="" />
+        <img class="con-img" src="./Assests/social media icons.svg" alt="" />
       </div>
     </section>
 
-    <section class="Works">
+    <section class="Works" id="Portfolio">
       <div class="card1">
         <img class="port-snap" src="./Assests/PORTFOLIO 1.png" alt="" />
         <div class="Text-Block">
@@ -61,7 +77,8 @@
             sign- ups required.
           </p>
           <p class="p-text-Desktop-2">
-            Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.
+            Exploring the future of media in Facebook's first Virtual Reality
+            app; a place to discover and enjoy 360 photos and videos on Gear VR.
           </p>
           <ul class="tags">
             <li class="t-li">HTML</li>
@@ -74,12 +91,72 @@
           </div>
         </div>
       </div>
+      <div class="modal" id="modal">
+        <div class="container_basic">
+          <div class="right_block">
+            <div class="Mod-Primary-Text">
+              <div class="Mod-Frame-18">
+                <div class="Mod-Project-Title">FACEBOOK 360</div>
+                <button class="Mod-Cl-But">
+                  <img src="./Assests/Icon - Cancel.svg" alt="" />
+                </button>
+              </div>
+              <div class="Mod-Frame-2">
+                <div class="Mod-Client">FACEBOOK</div>
+                <img class="counter" src="./Assests/Counter.svg" alt="" />
+                <div class="Mod-Role">Full Stack Dev</div>
+                <img class="counter" src="./Assests/Counter.svg" alt="" />
+                <div class="Mod-Year">2015</div>
+              </div>
+            </div>
+          </div>
+          <div class="Mod-Snap">
+            <img src="./Assests/Portfolio 1-MOD.png" alt="" srcset="" />
+          </div>
+          <div>
+            <div class="right-block-2">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                labore sequi alias tempore praesentium repellendus officiis
+                consequuntur. Ipsum esse voluptatem illo ratione asperiores
+                incidunt reprehenderit mollitia minus totam, harum quibusdam.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                labore sequi alias tempore praesentium repellendus officiis
+                consequuntur. Ipsum esse voluptatem illo ratione asperiores
+                incidunt reprehenderit mollitia minus totam, harum quibusdam.
+              </p>
+            </div>
+            <div class="right-block-3">
+              <ul class="tags">
+                <li class="t-li">HTML</li>
+                <li class="t-li">CSS</li>
+                <li class="t-li">JavaScript</li>
+              </ul>
+              <ul class="tags">
+                <li class="t-li">Ruby</li>
+                <li class="t-li">Bootstrap</li>
+              </ul>
+              <div class="divider">
+                <img src="./Assests/Separator Bottom.png" alt="" srcset="" />
+              </div>
+              <div class="Mod-Action">
+                <button>
+                  <p>See live</p>
+                  <img src="./Assests/Icon - Export.svg" alt="" srcset="" />
+                </button>
+                <button>
+                  <p>See source</p>
+                  <img src="./Assests/Frame.svg" alt="" srcset="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="card2">
-        <img
-          class="port-snap"
-          src="./Assests/PORTFOLI 2.png"
-          alt=""
-        />
+        <img class="port-snap" src="./Assests/PORTFOLI 2.png" alt="" />
         <div class="Text-Block">
           <div class="Primary-Text-2">
             <p class="Project-Title-2">Multi-Post Stories</p>
@@ -100,7 +177,8 @@
             sign- ups required.
           </p>
           <p class="p-text-Desktop-2">
-            A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.
+            A smart assistant to make driving more safe, efficient, and fun by
+            unlocking your most expensive computer: your car.
           </p>
           <ul class="tags">
             <li class="t-li">HTML</li>
@@ -113,12 +191,9 @@
           </div>
         </div>
       </div>
+
       <div class="card3">
-        <img
-          class="port-snap"
-          src="./Assests/Portoflio 4.png"
-          alt=""
-        />
+        <img class="port-snap" src="./Assests/Portoflio 4.png" alt="" />
         <div class="Text-Block">
           <div class="Primary-Text">
             <p class="Project-Title">Tonic</p>
@@ -153,11 +228,7 @@
         </div>
       </div>
       <div class="card4">
-        <img
-          class="port-snap"
-          src="./Assests/PORTFOLIO 3.png"
-          alt=""
-        />
+        <img class="port-snap" src="./Assests/PORTFOLIO 3.png" alt="" />
         <div class="Text-Block">
           <div class="Primary-Text-2">
             <p class="Project-Title-2">Multi-Post Stories</p>
@@ -178,7 +249,9 @@
             sign- ups required.
           </p>
           <p class="p-text-Desktop-2">
-            Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.
+            Experimental content creation feature that allows users to add to an
+            existing story over the course of a day without spamming their
+            friends.
           </p>
           <ul class="tags">
             <li class="t-li">HTML</li>
@@ -193,8 +266,7 @@
       </div>
     </section>
 
-    <section class="Myself">
-      
+    <section class="Myself" id="Myself">
       <div class="top">
         <p class="top-text1">About Myself</p>
         <p class="top-text2">
@@ -207,7 +279,11 @@
           <p class="social-text">LET'S CONNECT</p>
           <div class="Frame2">
             <img class="Frame2-icons" src="./Assests/Frame.svg " alt="" />
-            <img class="Frame2-icons" src="./Assests/Icon - Medium.svg" alt="" />
+            <img
+              class="Frame2-icons"
+              src="./Assests/Icon - Medium.svg"
+              alt=""
+            />
             <img class="Frame2-icons" src="./Assests/angelist 1.svg" alt="" />
             <img class="Frame2-icons" src="./Assests/Frame1.svg" alt="" />
           </div>
@@ -245,26 +321,29 @@
             <img src="./Assests/Icon - Chevron - Down - Larger.svg" alt="" />
           </button>
         </li>
-        <img class="sep-bot" src="./Assests/Separator Bottom.png" alt="">
+        <img class="sep-bot" src="./Assests/Separator Bottom.png" alt="" />
         <li class="Skills">
           <p class="lang-text">Skills</p>
           <button type="button" class="Lang-button">
             <img src="./Assests/Icon - Chevron - Down - Larger.svg" alt="" />
           </button>
         </li>
-        <img class="sep-bot" src="./Assests/Separator Bottom.png" alt="">
+        <img class="sep-bot" src="./Assests/Separator Bottom.png" alt="" />
       </ul>
-    
     </section>
 
-    <section class="contact">
+    <section class="contact" id="Contact">
       <p class="c-text1">Contact me</p>
       <p class="c-text2">
         If you have an application you are interested in developing, a feature
         that you need built or a project that needs coding. I'd love to help
         with it!
       </p>
-      <form class="contact-form" action="https://formspree.io/f/mbjvpgoq" method="post">
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/mbjvpgoq"
+        method="post"
+      >
         <input
           type="text"
           placeholder="Your name"
@@ -292,5 +371,6 @@
         <button type="submit" class="get-in-touch">Get in touch</button>
       </form>
     </section>
+    <script src="./script.js"></script>
   </body>
 </html>
